@@ -1,0 +1,4 @@
+{ 
+	"name" : "styleconsole",
+	"main" : "./lib/styleconsole.js" 
+}
