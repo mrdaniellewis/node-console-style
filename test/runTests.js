@@ -70,3 +70,13 @@ console.log('Chained');
 console.log('-------');
 console.log( style.bold.underline.yellowBG.red.inverse('Bold, underlined, red on yellow inversed') );
 
+console.log('');
+console.log('Objects');
+console.log('-------');
+console.log( style.bold.underline.cyanBG.red.inverse( [1,2,3], {foo:'bar'}, new Date() ) );
+
+console.log('');
+console.log('Placeholders');
+console.log('-------');
+console.log( style.bold.underline.cyanBG.red.inverse( '%s:%s', 'foo', 'bar' ) );
+
