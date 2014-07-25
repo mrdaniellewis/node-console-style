@@ -2,7 +2,7 @@
 
 Add colours and style to the node.js console output.
 
-# Alternatives
+## Alternatives
 
 https://www.npmjs.org/package/colors, but it modifies `String.prototype` and is therefore wrong. 
 
@@ -20,26 +20,24 @@ var style = require('console-style');
 console.log( style.bold.underline.red('Hello world') );
 ```
 
-The arguments are passed though [`util.format`](http://nodejs.org/api/util.html#util_util_format_format).  This means objects will be inspected, and 
-placeholders can be used.
+The arguments applied to the style are passed to [`util.format`](http://nodejs.org/api/util.html#util_util_format_format).  This means objects will be inspected, and placeholders can be used.
 
 ```js
 // Alternative syntax
 console.log( style( 'Hello world',  [ 'bold', 'underline', 'red' ] ) );
-
 ```
 
-This syntax does not pass the argument through util.format.
+This syntax does not use `util.format`.
 
 ## Options
 
 See http://en.wikipedia.org/wiki/ANSI_colors#Colors
 
 * bold
-* italic _not widely supported_
+* italic - _not widely supported_
 * underline
 * inverse
-* strikethough _not widely supported_
+* strikethough - _not widely supported_
 * white
 * black
 * blue
