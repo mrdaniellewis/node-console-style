@@ -2,20 +2,34 @@
 
 Add colours and style to the node.js console output.
 
-A slightly less offensive version of https://github.com/marak/colors.js/ as it doesn't change with String.prototype.
+# Alternatives
 
+https://www.npmjs.org/package/colors, but it modifies `String.prototype` and is therefore wrong. 
+
+## Intallation
+
+```bash
+$ npm install console-style
+```
 ## Usage
 
-``` js
-var style = require('styleconsole');
+```js
+var style = require('console-style');
 
 // Output bold, underlined and red text
 console.log( style.bold.underline.red('Hello world') );
+```
 
+The arguments are passed though [`util.format`](http://nodejs.org/api/util.html#util_util_format_format).  This means objects will be inspected, and 
+placeholders can be used.
+
+```js
 // Alternative syntax
 console.log( style( 'Hello world',  [ 'bold', 'underline', 'red' ] ) );
 
 ```
+
+This syntax does not pass the argument through util.format.
 
 ## Options
 

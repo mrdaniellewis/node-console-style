@@ -1,4 +1,13 @@
 { 
-	"name" : "styleconsole",
-	"main" : "./lib/styleconsole.js" 
+	"name" : "console-style",
+	"version": "0.1",
+	"description": "Colour and style your console output",
+	"keywords": "ansi, terminal, colors",
+	"main": "./lib/console-style.js",
+	"license": "MIT",
+	"author": "Daniel Lewis",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/npm/npm.git"
+	}
 }

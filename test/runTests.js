@@ -2,7 +2,7 @@
  *	Tests for styleconsole
  */
 
-var style = require('styleconsole');
+var style = require('console-style');
 
 console.log('Styles');
 console.log('------');
