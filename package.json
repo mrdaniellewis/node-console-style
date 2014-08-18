@@ -1,13 +1,13 @@
 { 
 	"name" : "console-style",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Colour and style your console output",
 	"keywords": "ansi, terminal, colors",
-	"main": "./lib/console-style.js",
 	"license": "MIT",
 	"author": "Daniel Lewis",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/mrdaniellewis/node-console-style"
+	"repository": "https://github.com/mrdaniellewis/node-console-style.git",
+	"scripts": {
+		"test": "node test"
 	}
+	
 }
