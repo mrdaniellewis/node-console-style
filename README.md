@@ -1,5 +1,7 @@
 # Add colour to the console
 
+[![npm version](https://badge.fury.io/js/console-style.svg)](http://badge.fury.io/js/console-style)
+
 Add colours and style to the node.js console output.
 
 ## Alternatives
